@@ -30,6 +30,10 @@ app.use(cors());
 // Routers
 const baseApiUrl = config.get<string>('baseApiUrl');
 
+app.get('/', (_, res) => {
+  res.send('Hello world!');
+});
+
 app.post(`${baseApiUrl}/game`, async (req: Request<{}, {}, PostGameRequestBody>, res) => {
   const { player1Name, player2Name } = req.body;
 
