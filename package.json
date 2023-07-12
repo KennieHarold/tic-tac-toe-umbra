@@ -1,0 +1,13 @@
+{
+  "name": "tic-tac-toe-umbra",
+  "version": "0.1.0",
+  "author": "Kennie Harold Mantac",
+  "private": true,
+  "scripts": {
+    "frontend:start": "cd frontend && npm start",
+    "server:dev": "cd server && npm run dev"
+  },
+  "workspaces": [
+    "frontend"
+  ]
+}
