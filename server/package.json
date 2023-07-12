@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "rimraf ./build && tsc",
-    "start": "npm run build && node build/src/app.js",
+    "build": "tsc",
+    "start": "ts-node src/app.ts",
     "dev": "nodemon --config nodemon.json src/app.ts | pino-pretty"
   },
   "license": "ISC",
